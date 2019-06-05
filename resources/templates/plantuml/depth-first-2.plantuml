@@ -1,0 +1,14 @@
+@startdot
+digraph foo {
+  node [style=rounded]
+  node1 [label="eval"]
+  node2 [label="cons"]
+  node3 [label="'*"]
+  node4 [label="rest"]
+  node5 [label="'(+ 1 2 3 4 5)"]
+
+  node1 -> node2 -> node3
+  node2 -> node4 -> node5
+
+}
+@enddot
